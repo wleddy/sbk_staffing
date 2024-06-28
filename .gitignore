@@ -1,0 +1,26 @@
+.DS_Store
+*.py[co]
+env/
+.idea
+*.log
+logs/
+*.sqlite
+instance/
+__pycache__
+.pytest_cache
+.coverage
+robots.txt
+.vscode
+
+## Passenger web app files
+tmp/
+passenger*
+
+resource/
+
+## The repo on which all depends
+shotglass2/
+
+staffing/
+staffing_base/
+ical/

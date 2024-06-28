@@ -1,0 +1,465 @@
+/*
+***************************************************
+Use this as a template to override default_style.css
+***************************************************
+
+*/
+
+/* change the fixed width of the right menu here*/
+/* 
+.menu_space {
+    margin-right:200px;
+}
+.menu_width {
+    width:200px;
+}
+
+p {margin-top:0;margin-bottom:.4em;}
+
+p#addRecord {
+    margin:0;
+    padding:4pt;
+}
+
+hr {
+    border-top: 1px solid #737373;
+    margin: 15px 0;
+}
+
+
+pre {
+    overflow-x: scroll;
+    margin: .3em 0;
+}
+
+p.clear {
+    font-size:1pt;
+    clear:both;
+    margin:0;
+    padding:0;
+} 
+*/
+
+/* make list tables look clickable */
+/* 
+.datatable tr {
+    cursor:pointer;
+    background-color: whitesmoke;
+}
+
+
+#modal-box-contain {
+    overflow:hidden;
+    padding-top:20pt !important;
+    z-index:auto;
+} */
+
+#modal-form{
+    max-height:95vh;
+    overflow:scroll;
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#modal-form::-webkit-scrollbar {
+    display: none;
+}
+
+/* 
+.sg-busy-box {
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:100000;
+    background-repeat:no-repeat;
+    background-position-x:50%;
+    background-position-y:50%;
+    background-color:#ccc;
+    border:2pt solid black;
+    background-image:url("/static/images/busy.gif");
+    text-align:center;
+    font-size:24pt;
+    font-style:bold;
+}
+
+.sg-busy-box::before {
+    content:"Please Wait...";
+}
+
+#sg-list-template-contain {
+    padding-top:6pt;
+    padding-bottom:6pt;
+} 
+*/
+
+/* For the Table list form search */
+/* 
+span.deleteicon {
+    position: relative;
+}
+span.deleteicon span {
+    position: absolute;
+    display: block;
+    top: -3px;
+    right: 3px;
+    width: 22px;
+    height: 24px;
+    background: url('/static/images/clear_input.png');
+    cursor: pointer;
+}
+span.deleteicon input {
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.sg-list-add-button {
+    background-image: url('/static/images/add-rec-background.png');
+    background-repeat: no-repeat;;
+    background-position:2pt;
+    padding-left:24pt;
+} 
+*/
+/* labels for the search fields in list forms */
+/* 
+.sg-list-search-label{
+    vertical-align:top;
+    font-weight:800;
+} 
+*/
+
+/* sortable icon for list table columns */
+/* 
+.sg-sortable, .sg-sortable-asc, .sg-sortable-desc{
+    background: url('/static/images/order_default_icon.png');
+    background-repeat: no-repeat;
+    padding-left:16pt !important;
+ }
+   
+.sg-sortable-asc{
+    background: url('/static/images/order_asc_icon.png');
+    background-repeat: no-repeat;
+}
+
+.sg-sortable-desc{
+    background: url('/static/images/order_desc_icon.png');
+    background-repeat: no-repeat;
+} 
+*/
+
+/* style the record count at the bottom of default list table */
+/* 
+.list_record_count {
+    margin-top:6pt;
+    padding:6pt 20pt;
+    font-weight:800;
+    border-top:1pt solid #666;
+    border-bottom:1pt solid #666;
+}
+*/
+
+/* no underline in navigation menus */
+/* #nav a {text-decoration:none;} */
+
+/* add to sidebar navigation menu */
+/* 
+.nav-sidebar-extra {
+    min-height:100vh;
+    overflow:auto;
+    position:absolute!important;
+    right:0;
+    top:0;
+}
+*/
+
+/*
+  Add a little blank space between input fields in w3 columns 
+  May want to add more later, but this will do for now...
+*/
+/* 
+.w3-quarter label, .w3-quarter input,
+.w3-third label, .w3-third input,
+.w3-half label, .w3-half input
+{width:98%;} 
+*/
+
+/* .flash {} */
+/* For warning category messages */
+/* 
+.flash-warning{
+    background-color: lightcoral !important;
+    color: black !important;
+    padding-top:3pt;
+    padding-bottom:3pt;
+    font-weight: bold;
+} 
+*/
+
+/* Styles for the mobile input keypad */
+/* 
+#keypad_window {
+    display:none;
+}
+#keypad_window div:first-child {
+    max-width:225pt;
+    margin:auto;
+    padding:6pt;
+    border-width: 6pt;
+    border-style: solid;
+    border-radius:16pt;
+    border-color:gainsboro;
+}
+#keypad_value {
+    height:50pt;
+    border: 2pt black inset;
+    padding: 2pt;
+    margin:6pt 30pt;
+    font-weight:bold;
+    font-size:28pt;
+    background-color:#ccc;
+    color:forestgreen;
+}
+.keypad_button, .keypad_zero {
+    width: 40pt;
+    margin: 3pt 4pt;
+    touch-action:none;
+}
+.keypad_zero {
+    width: 90pt
+}
+.keypad_right_button {
+    margin-right:0;
+}
+#keypad_header {
+    text-align: center;
+    font-size: 16pt;
+    font-weight:bold;
+}
+
+*/
+
+/* Some styles for staffing */
+
+/* for signup pages */
+.event-contain{margin:6pt 0 0 0;}
+@media (min-width:993px){.event-contain{margin:10pt 16.6666% 0 16.6666%;}}
+.job-contain{margin:0;}
+@media (min-width:993px){.job-contain{margin:0 16.6666%;}}
+.participant-badge {padding:7pt;min-width:29pt;}
+.filled-bar {cursor:text;padding:3pt 0pt}
+
+/* special styling for old event listings */
+.past-event, hr.past-event{
+    background-color:#ddd;
+    color:black;
+}
+div.past-event{
+    padding-top:12pt;
+}
+
+hr.past-event{
+    padding:0;
+    margin:0;
+    border-color:black;
+}
+
+/* set the open shift colors for the spreadheet view of roster */
+.filled-shift, .filled-volunteer-shift {background-color:lightgreen;}
+.open-shift {background-color:yellow;}
+.open-volunteer-shift {background-color:lightblue;}
+
+/* some background colors for event types */
+/* at least initially used for calendar activity types */
+.yellow-background {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+.green-background {
+    background-color: rgba(0, 143, 0, 0.3);
+}
+.red-background {
+    background-color: rgba(194, 0, 0, 0.3);
+}
+.blue-background {
+    background-color: rgba(0, 0, 178, 0.3);
+}
+.turquoise-background {
+    background-color: rgba(0, 255, 253, 0.5);
+}
+.coffee-background {
+    background-color: rgba(128, 63, 0, 0.3);
+}
+.silver-background {
+    background-color: rgba(214, 214, 214, 1.0);
+}
+
+
+#headerlogo-dark {
+    display:none;
+}
+#headerlogo {
+    display:block;
+}
+
+
+/* some sample color schemes */
+/* brown and tan (SABA) */
+/*
+:root {
+    --primary-color: rgb(63, 36, 20);
+    --primary-contrast: #fff;
+    --primary-border: rgb(63, 36, 20);
+    --secondary-color: rgb(247, 240, 230); 
+    --secondary-contrast: #000;
+    --secondary-border: rgb(247, 240, 230);
+    --menu-border: rgb(247, 240, 230);
+   } 
+*/
+
+/* Amber and Sand */
+/* 
+:root {
+    --primary-color: #f4cd5b;
+    --primary-contrast: #000;
+    --primary-border: #f4cd5b;
+    --secondary-color: #fdf5e6; 
+    --secondary-contrast: #000;
+    --secondary-border: #fdf5e6;
+    --menu-border: #fbecce;
+   } */
+
+
+/* indigo and blue */
+/* 
+:root {
+    --primary-color: #3f51b5;
+    --primary-contrast: #fff;
+    --primary-border: #ddffff;
+    --secondary-color: #ddffff; 
+    --secondary-contrast: #000;
+    --secondary-border: #ddffff;
+    --menu-border: #b7f2f2;
+   } */
+
+/*  colors to use...  */
+:root {
+    color:#000;
+    background-color: #f8f8f8;
+    --primary-color: rgb(86 114 88);
+    --primary-contrast: #fff;
+    --primary-border: rgb(63, 36, 20);
+    --secondary-color: rgb(230	254	212	); 
+    --secondary-contrast: #000;
+    --secondary-border: rgb(180, 213, 155);
+    --menu-border: rgb(247, 240, 230);
+   }
+
+@media (prefers-color-scheme: dark)
+{
+    :root {
+        color: white;
+        background-color: black;
+
+        --primary-color: #005d54;
+        --primary-contrast: #fff;
+        --primary-border: white;
+        --secondary-color: #3f813f; 
+        --secondary-contrast: #fafbfa;
+        --secondary-border: #ddffdd;
+        --menu-border: rgb(247, 240, 230);
+       }
+    .datatable tr {
+        color:black;
+        background-color:lightgray;
+    }
+    .w3-striped tbody tr:nth-child(even) {
+        background-color:#e1e0e0;
+    }
+    .sg-busy-box {
+        background-color:black;
+        border:2pt solid white;
+    }
+    .w3-table-all tr:nth-child(even), .datatable tr:nth-child(even) {
+        background-color: var(--secondary-color)!important;
+        color:white!important;
+    }
+    
+    .w3-hoverable tbody tr:hover, .w3-ul.w3-hoverable li:hover, .datatable tr {
+        background-color:black!important;
+        color: white !important;
+    }
+    .w3-btn, .w3-button {
+        border: white .5pt solid;
+    }
+    
+    #keypad_header {
+        color:white;
+    }
+    #keypad_window div:first-child {
+        background-color:black;
+    }
+}
+
+/* the actual styles... */
+.w3-menu-color,.w3-drop-menu-hover-color:hover,
+.w3-primary-color,.w3-primary-hover-color:hover,
+.w3-drop-menu-section-hover-color:hover,.w3-drop-menu-section-color:hover,
+.w3-drop-menu-section-color
+{color:var(--primary-contrast)!important;background-color:var(--primary-color)!important}
+.w3-primary-border-color,.w3-primary-hover-border-color:hover{border-color:var(--primary-border)!important}
+
+.w3-menu-hover-color:hover,
+.w3-secondary-color,.w3-secondary-hover-color:hover,.w3-drop-menu-color,
+.w3-label-color,.w3-label-hover-color:hover,.roster-hover-color:hover
+{color:var(--secondary-contrast)!important;background-color:var(--secondary-color)!important}
+.w3-secondary-border-color,.w3-secondary-hover-border-color:hover{border-color:var(--secondary-border)!important}
+
+.w3-menu-border {
+    border:solid 1pt var(--menu-border)!important;
+}
+
+/* styles for the pagination in the record lists */
+
+/* .sg.pagination {} */
+.sg-page-current {
+    font-weight: bold;
+}
+a.sg-page-end, a.sg-page-prev,
+a.sg-page-next, a.sg-page-select,
+a.sg-page-begin
+    {
+    text-decoration: none;
+}
+.sg-page-end, .sg-page-begin,
+.sg-page-next, .sg-page-prev  {
+    background-color: var(--primary-color);
+    color: var(--primary-contrast);
+    padding:2pt;
+}
+.sg-page-begin.sg-page-inactive, .sg-page-end.sg-page-inactive,
+.sg-page-begin.sg-page-current, .sg-page-end.sg-page-current,
+.sg-page-next.sg-page-inactive, .sg-page-prev.sg-page-inactive,
+.sg-page-next.sg-page-current, .sg-page-prev.sg-page-current {
+    color: var(--secondary-contrast);
+    background-color: var(--secondary-color);
+    padding:2pt;
+}
+
+/* for field labels and buttons */
+/* required fields */
+/* red */
+/* 
+.w3-label-color,.w3-label-hover-color:hover{color:#000!important;background-color:#ddffdd!important}
+.w3-label-req,.w3-hover-label-req:hover{color:#000!important;background-color:#ffdddd!important}
+.w3-text-req,.w3-hover-text-req:hover{color:#f44336!important} 
+*/
+
+/* buttons */
+/* 
+.w3-save-button-color,.w3-save-button-hover-color:hover{color:#fff!important;background-color:#009688!important}
+.w3-delete-button-color,.w3-delete-button-hover-color:hover{color:#fff!important;background-color:#ff5722!important}
+.w3-cancel-button-color,.w3-cancel-button-hover-color:hover{color:#fff!important;background-color:#3f51b5!important} 
+*/
+

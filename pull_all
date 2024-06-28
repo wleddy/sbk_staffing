@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+git pull origin master
+
+cd shotglass2/
+git pull origin master
+cd ../staffing_base/
+git pull origin master
+cd ../ical/
+git pull origin master
+cd ../
+echo 'All Done'
+
+
